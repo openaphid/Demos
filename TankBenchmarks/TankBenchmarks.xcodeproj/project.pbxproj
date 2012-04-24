@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D60D7030154CDF99009EE00C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60D702F154CDF99009EE00C /* UIKit.framework */; };
+		D60D7032154CDF99009EE00C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60D7031154CDF99009EE00C /* Foundation.framework */; };
+		D60D7034154CDF99009EE00C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60D7033154CDF99009EE00C /* CoreGraphics.framework */; };
+		D60D703A154CDF99009EE00C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60D7038154CDF99009EE00C /* InfoPlist.strings */; };
+		D60D703C154CDF99009EE00C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D60D703B154CDF99009EE00C /* main.m */; };
+		D60D7040154CDF99009EE00C /* OAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D60D703F154CDF99009EE00C /* OAAppDelegate.m */; };
+		D60D704E154CE00E009EE00C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60D704C154CDFFF009EE00C /* QuartzCore.framework */; };
+		D60D7051154CE029009EE00C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60D704F154CE01F009EE00C /* OpenGLES.framework */; };
+		D60D7053154CE034009EE00C /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D60D7052154CE034009EE00C /* libicucore.dylib */; };
+		D60D7055154CE047009EE00C /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D60D7054154CE047009EE00C /* libstdc++.dylib */; };
+		D60D705C154CE0CC009EE00C /* libAJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D60D7057154CE0CC009EE00C /* libAJ.a */; };
+		D60D705D154CE0CC009EE00C /* libOpenAphid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D60D7058154CE0CC009EE00C /* libOpenAphid.a */; };
+		D60D7064154CE173009EE00C /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D60D705E154CE173009EE00C /* Icon-72.png */; };
+		D60D7065154CE173009EE00C /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D60D705F154CE173009EE00C /* Icon-Small-50.png */; };
+		D60D7066154CE173009EE00C /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = D60D7060154CE173009EE00C /* Icon-Small.png */; };
+		D60D7067154CE173009EE00C /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D60D7061154CE173009EE00C /* Icon-Small@2x.png */; };
+		D60D7068154CE173009EE00C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D60D7062154CE173009EE00C /* Icon.png */; };
+		D60D7069154CE173009EE00C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D60D7063154CE173009EE00C /* Icon@2x.png */; };
+		D60D706B154CE591009EE00C /* tank.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D60D706A154CE591009EE00C /* tank.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D60D702B154CDF99009EE00C /* TankBench.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TankBench.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60D702F154CDF99009EE00C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D60D7031154CDF99009EE00C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D60D7033154CDF99009EE00C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D60D7037154CDF99009EE00C /* TankBenchmarks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TankBenchmarks-Info.plist"; sourceTree = "<group>"; };
+		D60D7039154CDF99009EE00C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D60D703B154CDF99009EE00C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D60D703D154CDF99009EE00C /* TankBenchmarks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TankBenchmarks-Prefix.pch"; sourceTree = "<group>"; };
+		D60D703E154CDF99009EE00C /* OAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAAppDelegate.h; sourceTree = "<group>"; };
+		D60D703F154CDF99009EE00C /* OAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAAppDelegate.m; sourceTree = "<group>"; };
+		D60D704C154CDFFF009EE00C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D60D704F154CE01F009EE00C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D60D7052154CE034009EE00C /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		D60D7054154CE047009EE00C /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		D60D7057154CE0CC009EE00C /* libAJ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAJ.a; sourceTree = "<group>"; };
+		D60D7058154CE0CC009EE00C /* libOpenAphid.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOpenAphid.a; sourceTree = "<group>"; };
+		D60D7059154CE0CC009EE00C /* OAConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAConstants.h; sourceTree = "<group>"; };
+		D60D705A154CE0CC009EE00C /* OAGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAGLViewController.h; sourceTree = "<group>"; };
+		D60D705B154CE0CC009EE00C /* OARootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARootViewController.h; sourceTree = "<group>"; };
+		D60D705E154CE173009EE00C /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		D60D705F154CE173009EE00C /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		D60D7060154CE173009EE00C /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		D60D7061154CE173009EE00C /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		D60D7062154CE173009EE00C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		D60D7063154CE173009EE00C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		D60D706A154CE591009EE00C /* tank.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = tank.bundle; path = TankBenchmarks/tank.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D60D7028154CDF99009EE00C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60D7055154CE047009EE00C /* libstdc++.dylib in Frameworks */,
+				D60D7053154CE034009EE00C /* libicucore.dylib in Frameworks */,
+				D60D7051154CE029009EE00C /* OpenGLES.framework in Frameworks */,
+				D60D704E154CE00E009EE00C /* QuartzCore.framework in Frameworks */,
+				D60D7030154CDF99009EE00C /* UIKit.framework in Frameworks */,
+				D60D7032154CDF99009EE00C /* Foundation.framework in Frameworks */,
+				D60D7034154CDF99009EE00C /* CoreGraphics.framework in Frameworks */,
+				D60D705C154CE0CC009EE00C /* libAJ.a in Frameworks */,
+				D60D705D154CE0CC009EE00C /* libOpenAphid.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D60D7020154CDF99009EE00C = {
+			isa = PBXGroup;
+			children = (
+				D60D706A154CE591009EE00C /* tank.bundle */,
+				D60D7056154CE0CC009EE00C /* OpenAphid-Runtime */,
+				D60D7035154CDF99009EE00C /* TankBenchmarks */,
+				D60D702E154CDF99009EE00C /* Frameworks */,
+				D60D702C154CDF99009EE00C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D60D702C154CDF99009EE00C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D60D702B154CDF99009EE00C /* TankBench.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D60D702E154CDF99009EE00C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D60D7054154CE047009EE00C /* libstdc++.dylib */,
+				D60D7052154CE034009EE00C /* libicucore.dylib */,
+				D60D704F154CE01F009EE00C /* OpenGLES.framework */,
+				D60D704C154CDFFF009EE00C /* QuartzCore.framework */,
+				D60D702F154CDF99009EE00C /* UIKit.framework */,
+				D60D7031154CDF99009EE00C /* Foundation.framework */,
+				D60D7033154CDF99009EE00C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D60D7035154CDF99009EE00C /* TankBenchmarks */ = {
+			isa = PBXGroup;
+			children = (
+				D60D703E154CDF99009EE00C /* OAAppDelegate.h */,
+				D60D703F154CDF99009EE00C /* OAAppDelegate.m */,
+				D60D7036154CDF99009EE00C /* Supporting Files */,
+			);
+			path = TankBenchmarks;
+			sourceTree = "<group>";
+		};
+		D60D7036154CDF99009EE00C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D60D705E154CE173009EE00C /* Icon-72.png */,
+				D60D705F154CE173009EE00C /* Icon-Small-50.png */,
+				D60D7060154CE173009EE00C /* Icon-Small.png */,
+				D60D7061154CE173009EE00C /* Icon-Small@2x.png */,
+				D60D7062154CE173009EE00C /* Icon.png */,
+				D60D7063154CE173009EE00C /* Icon@2x.png */,
+				D60D7037154CDF99009EE00C /* TankBenchmarks-Info.plist */,
+				D60D7038154CDF99009EE00C /* InfoPlist.strings */,
+				D60D703B154CDF99009EE00C /* main.m */,
+				D60D703D154CDF99009EE00C /* TankBenchmarks-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D60D7056154CE0CC009EE00C /* OpenAphid-Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				D60D7057154CE0CC009EE00C /* libAJ.a */,
+				D60D7058154CE0CC009EE00C /* libOpenAphid.a */,
+				D60D7059154CE0CC009EE00C /* OAConstants.h */,
+				D60D705A154CE0CC009EE00C /* OAGLViewController.h */,
+				D60D705B154CE0CC009EE00C /* OARootViewController.h */,
+			);
+			name = "OpenAphid-Runtime";
+			path = "../OpenAphid-Runtime";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D60D702A154CDF99009EE00C /* TankBench */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D60D7043154CDF99009EE00C /* Build configuration list for PBXNativeTarget "TankBench" */;
+			buildPhases = (
+				D60D7027154CDF99009EE00C /* Sources */,
+				D60D7028154CDF99009EE00C /* Frameworks */,
+				D60D7029154CDF99009EE00C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TankBench;
+			productName = TankBenchmarks;
+			productReference = D60D702B154CDF99009EE00C /* TankBench.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D60D7022154CDF99009EE00C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OA;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = D60D7025154CDF99009EE00C /* Build configuration list for PBXProject "TankBenchmarks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D60D7020154CDF99009EE00C;
+			productRefGroup = D60D702C154CDF99009EE00C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D60D702A154CDF99009EE00C /* TankBench */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D60D7029154CDF99009EE00C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60D703A154CDF99009EE00C /* InfoPlist.strings in Resources */,
+				D60D7064154CE173009EE00C /* Icon-72.png in Resources */,
+				D60D7065154CE173009EE00C /* Icon-Small-50.png in Resources */,
+				D60D7066154CE173009EE00C /* Icon-Small.png in Resources */,
+				D60D7067154CE173009EE00C /* Icon-Small@2x.png in Resources */,
+				D60D7068154CE173009EE00C /* Icon.png in Resources */,
+				D60D7069154CE173009EE00C /* Icon@2x.png in Resources */,
+				D60D706B154CE591009EE00C /* tank.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D60D7027154CDF99009EE00C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60D703C154CDF99009EE00C /* main.m in Sources */,
+				D60D7040154CDF99009EE00C /* OAAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D60D7038154CDF99009EE00C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D60D7039154CDF99009EE00C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D60D7041154CDF99009EE00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D60D7042154CDF99009EE00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D60D7044154CDF99009EE00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TankBenchmarks/TankBenchmarks-Prefix.pch";
+				INFOPLIST_FILE = "TankBenchmarks/TankBenchmarks-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../OpenAphid-Runtime\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TankBench;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D60D7045154CDF99009EE00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TankBenchmarks/TankBenchmarks-Prefix.pch";
+				INFOPLIST_FILE = "TankBenchmarks/TankBenchmarks-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../OpenAphid-Runtime\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TankBench;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D60D7025154CDF99009EE00C /* Build configuration list for PBXProject "TankBenchmarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60D7041154CDF99009EE00C /* Debug */,
+				D60D7042154CDF99009EE00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D60D7043154CDF99009EE00C /* Build configuration list for PBXNativeTarget "TankBench" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60D7044154CDF99009EE00C /* Debug */,
+				D60D7045154CDF99009EE00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D60D7022154CDF99009EE00C /* Project object */;
+}
