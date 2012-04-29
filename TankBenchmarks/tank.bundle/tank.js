@@ -10,11 +10,12 @@ tank.maxTankCount = 1000;
 tank.Tank = function(texture) {
 	//fields
 	this.sprite_ = new aphid.g2d.Sprite(texture);
+	//the movement velocity and direction
 	this.vx_ = Math.random() > 0.5 ? 0.1 : -0.1;
 	this.vy_ = Math.random() > 0.5 ? 0.1 : -0.1;
 
-	//setup
 	var winSize = aphid.g2d.director.winSize;
+	//a random initial position
 	this.sprite_.position = new aphid.core.Point(Math.random() * winSize.width, Math.random() * winSize.height);
 	//setup and register frame update listener
 	this.sprite_.onframeupdate = bind(this, this.handleFrameUpdate);

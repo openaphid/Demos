@@ -37,8 +37,9 @@ limitations under the License.
 	self.viewController = [[[OARootViewController alloc] init] autorelease];
 	
 	[self.viewController.glViewController configBundleName:@"tank.bundle" 
-																								 baseURL:[NSURL URLWithString:@"http://129.158.217.36:18080"] 
-																						 developMode:YES];
+																								 baseURL:[NSURL URLWithString:@"http://129.158.217.36:18080"] //Notes: please replace it with the address of your develop web server
+																						 developMode:NO];	//Sets to YES to enable "Develop Mode" 
+	
 	self.viewController.glViewController.supportedOrientations = OAOrientationPortrait;
 	[self.viewController.glViewController configGLViewPixelFormat:OAGLViewPixelFormatRGB565];
 	
