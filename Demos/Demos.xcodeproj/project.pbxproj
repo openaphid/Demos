@@ -26,6 +26,26 @@
 		D6106DC91556B49300152C2B /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6F26394154D149400130174 /* Icon-Small@2x.png */; };
 		D6106DCA1556B49300152C2B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D6F26395154D149400130174 /* Icon.png */; };
 		D6106DCB1556B49300152C2B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6F26396154D149400130174 /* Icon@2x.png */; };
+		D67BF4C1156280EB0085945B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F263AF154D152500130174 /* UIKit.framework */; };
+		D67BF4C2156280EB0085945B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F263B1154D152D00130174 /* Foundation.framework */; };
+		D67BF4C3156280EB0085945B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F263B3154D153600130174 /* CoreGraphics.framework */; };
+		D67BF4C9156280EB0085945B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D67BF4C7156280EB0085945B /* InfoPlist.strings */; };
+		D67BF4CB156280EB0085945B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D67BF4CA156280EB0085945B /* main.m */; };
+		D67BF4CF156280EB0085945B /* OAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D67BF4CE156280EB0085945B /* OAAppDelegate.m */; };
+		D67BF4D31562811C0085945B /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F263B7154D154300130174 /* libstdc++.dylib */; };
+		D67BF4D41562811C0085945B /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F263B5154D153D00130174 /* libicucore.dylib */; };
+		D67BF4D51562811C0085945B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F263BB154D155400130174 /* OpenGLES.framework */; };
+		D67BF4D61562811C0085945B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F263B9154D154E00130174 /* QuartzCore.framework */; };
+		D67BF4D7156281230085945B /* libAJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F2635B154D131E00130174 /* libAJ.a */; };
+		D67BF4D8156281230085945B /* libOpenAphid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F2635C154D131E00130174 /* libOpenAphid.a */; };
+		D67BF4DB156281C00085945B /* ObjCBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = D67BF4DA156281C00085945B /* ObjCBindings.m */; };
+		D67BF4E0156282650085945B /* demo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D6F26368154D13AF00130174 /* demo.bundle */; };
+		D67BF4E1156282720085945B /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D6F26391154D149400130174 /* Icon-72.png */; };
+		D67BF4E2156282720085945B /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D6F26392154D149400130174 /* Icon-Small-50.png */; };
+		D67BF4E3156282720085945B /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = D6F26393154D149400130174 /* Icon-Small.png */; };
+		D67BF4E4156282720085945B /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6F26394154D149400130174 /* Icon-Small@2x.png */; };
+		D67BF4E5156282720085945B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D6F26395154D149400130174 /* Icon.png */; };
+		D67BF4E6156282720085945B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6F26396154D149400130174 /* Icon@2x.png */; };
 		D6F26303154CEE0E00130174 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6F26301154CEE0E00130174 /* InfoPlist.strings */; };
 		D6F26305154CEE0E00130174 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F26304154CEE0E00130174 /* main.m */; };
 		D6F26309154CEE0E00130174 /* OAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F26308154CEE0E00130174 /* OAAppDelegate.m */; };
@@ -112,6 +132,16 @@
 		D6106DB81556B31800152C2B /* TouchTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchTest-Prefix.pch"; sourceTree = "<group>"; };
 		D6106DB91556B31800152C2B /* OAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAAppDelegate.h; sourceTree = "<group>"; };
 		D6106DBA1556B31800152C2B /* OAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAAppDelegate.m; sourceTree = "<group>"; };
+		D67BF4B9156280C60085945B /* OABindingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OABindingProtocol.h; sourceTree = "<group>"; };
+		D67BF4BF156280EB0085945B /* ObjCBindingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjCBindingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67BF4C6156280EB0085945B /* ObjCBindingTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjCBindingTest-Info.plist"; sourceTree = "<group>"; };
+		D67BF4C8156280EB0085945B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D67BF4CA156280EB0085945B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D67BF4CC156280EB0085945B /* ObjCBindingTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjCBindingTest-Prefix.pch"; sourceTree = "<group>"; };
+		D67BF4CD156280EB0085945B /* OAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAAppDelegate.h; sourceTree = "<group>"; };
+		D67BF4CE156280EB0085945B /* OAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAAppDelegate.m; sourceTree = "<group>"; };
+		D67BF4D9156281C00085945B /* ObjCBindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCBindings.h; sourceTree = "<group>"; };
+		D67BF4DA156281C00085945B /* ObjCBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCBindings.m; sourceTree = "<group>"; };
 		D6F262F4154CEE0E00130174 /* SpriteTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F26300154CEE0E00130174 /* SpriteTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteTest-Info.plist"; sourceTree = "<group>"; };
 		D6F26302154CEE0E00130174 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -175,6 +205,22 @@
 				D6106DAF1556B31800152C2B /* CoreGraphics.framework in Frameworks */,
 				D6106DAD1556B31800152C2B /* UIKit.framework in Frameworks */,
 				D6106DAE1556B31800152C2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67BF4BC156280EB0085945B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67BF4D7156281230085945B /* libAJ.a in Frameworks */,
+				D67BF4D8156281230085945B /* libOpenAphid.a in Frameworks */,
+				D67BF4D31562811C0085945B /* libstdc++.dylib in Frameworks */,
+				D67BF4D41562811C0085945B /* libicucore.dylib in Frameworks */,
+				D67BF4D51562811C0085945B /* OpenGLES.framework in Frameworks */,
+				D67BF4D61562811C0085945B /* QuartzCore.framework in Frameworks */,
+				D67BF4C1156280EB0085945B /* UIKit.framework in Frameworks */,
+				D67BF4C2156280EB0085945B /* Foundation.framework in Frameworks */,
+				D67BF4C3156280EB0085945B /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +312,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D67BF4C4156280EB0085945B /* ObjCBindingTest */ = {
+			isa = PBXGroup;
+			children = (
+				D67BF4CD156280EB0085945B /* OAAppDelegate.h */,
+				D67BF4CE156280EB0085945B /* OAAppDelegate.m */,
+				D67BF4D9156281C00085945B /* ObjCBindings.h */,
+				D67BF4DA156281C00085945B /* ObjCBindings.m */,
+				D67BF4C5156280EB0085945B /* Supporting Files */,
+			);
+			path = ObjCBindingTest;
+			sourceTree = "<group>";
+		};
+		D67BF4C5156280EB0085945B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D67BF4C6156280EB0085945B /* ObjCBindingTest-Info.plist */,
+				D67BF4C7156280EB0085945B /* InfoPlist.strings */,
+				D67BF4CA156280EB0085945B /* main.m */,
+				D67BF4CC156280EB0085945B /* ObjCBindingTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D6F262E7154CEDDC00130174 = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +346,7 @@
 				D6F2634B154D0C6600130174 /* NodeTest */,
 				D6F262FE154CEE0E00130174 /* SpriteTest */,
 				D6106DB01556B31800152C2B /* TouchTest */,
+				D67BF4C4156280EB0085945B /* ObjCBindingTest */,
 				D6F262F7154CEE0E00130174 /* Frameworks */,
 				D6F262F5154CEE0E00130174 /* Products */,
 			);
@@ -290,6 +360,7 @@
 				D6F2632E154D0C4B00130174 /* EffectTest.app */,
 				D6F26346154D0C6600130174 /* NodeTest.app */,
 				D6106DAB1556B31800152C2B /* TouchTest.app */,
+				D67BF4BF156280EB0085945B /* ObjCBindingTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -397,6 +468,7 @@
 			children = (
 				D6F2635B154D131E00130174 /* libAJ.a */,
 				D6F2635C154D131E00130174 /* libOpenAphid.a */,
+				D67BF4B9156280C60085945B /* OABindingProtocol.h */,
 				D6F2635D154D131E00130174 /* OAConstants.h */,
 				D6F2635E154D131E00130174 /* OAGLViewController.h */,
 				D6F2635F154D131E00130174 /* OARootViewController.h */,
@@ -436,6 +508,23 @@
 			name = TouchTest;
 			productName = TouchTest;
 			productReference = D6106DAB1556B31800152C2B /* TouchTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D67BF4BE156280EB0085945B /* ObjCBindingTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D67BF4D0156280EB0085945B /* Build configuration list for PBXNativeTarget "ObjCBindingTest" */;
+			buildPhases = (
+				D67BF4BB156280EB0085945B /* Sources */,
+				D67BF4BC156280EB0085945B /* Frameworks */,
+				D67BF4BD156280EB0085945B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjCBindingTest;
+			productName = ObjCBindingTest;
+			productReference = D67BF4BF156280EB0085945B /* ObjCBindingTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D6F262F3154CEE0E00130174 /* SpriteTest */ = {
@@ -531,6 +620,7 @@
 				D6F26345154D0C6600130174 /* NodeTest */,
 				D6F262F3154CEE0E00130174 /* SpriteTest */,
 				D6106DAA1556B31800152C2B /* TouchTest */,
+				D67BF4BE156280EB0085945B /* ObjCBindingTest */,
 			);
 		};
 /* End PBXProject section */
@@ -548,6 +638,21 @@
 				D6106DC91556B49300152C2B /* Icon-Small@2x.png in Resources */,
 				D6106DCA1556B49300152C2B /* Icon.png in Resources */,
 				D6106DCB1556B49300152C2B /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67BF4BD156280EB0085945B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67BF4C9156280EB0085945B /* InfoPlist.strings in Resources */,
+				D67BF4E0156282650085945B /* demo.bundle in Resources */,
+				D67BF4E1156282720085945B /* Icon-72.png in Resources */,
+				D67BF4E2156282720085945B /* Icon-Small-50.png in Resources */,
+				D67BF4E3156282720085945B /* Icon-Small.png in Resources */,
+				D67BF4E4156282720085945B /* Icon-Small@2x.png in Resources */,
+				D67BF4E5156282720085945B /* Icon.png in Resources */,
+				D67BF4E6156282720085945B /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +728,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D67BF4BB156280EB0085945B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67BF4CB156280EB0085945B /* main.m in Sources */,
+				D67BF4CF156280EB0085945B /* OAAppDelegate.m in Sources */,
+				D67BF4DB156281C00085945B /* ObjCBindings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6F262F0154CEE0E00130174 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -666,6 +781,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				D6106DB41556B31800152C2B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D67BF4C7156280EB0085945B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D67BF4C8156280EB0085945B /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -755,6 +878,71 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "TouchTest/TouchTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../OpenAphid-Runtime\"",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D67BF4D1156280EB0085945B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjCBindingTest/ObjCBindingTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ObjCBindingTest/ObjCBindingTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../OpenAphid-Runtime\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D67BF4D2156280EB0085945B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjCBindingTest/ObjCBindingTest-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ObjCBindingTest/ObjCBindingTest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1082,6 +1270,15 @@
 			buildConfigurations = (
 				D6106DBD1556B31800152C2B /* Debug */,
 				D6106DBE1556B31800152C2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D67BF4D0156280EB0085945B /* Build configuration list for PBXNativeTarget "ObjCBindingTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67BF4D1156280EB0085945B /* Debug */,
+				D67BF4D2156280EB0085945B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
