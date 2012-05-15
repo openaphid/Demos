@@ -1,0 +1,24 @@
+aphid-1.png, aphid-2.png, background-480.png are designed by [Onna Dobre](http://wannadobre.carbonmade.com/) and are released under the following license:
+
+	Copyright 2012 Aphid Mobile
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+ 
+	   http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+
+arrow-left.png, arrow-right.png and reset.png are generated from a design by shokunin: 
+	http://openclipart.org/detail/77329/arrow-blue-by-shokunin
+	
+fire.png is from cocos2d-iphone:
+	http://www.cocos2d-iphone.org/
+
+walk-cycle.png and walk-cycle-mono.png are modified from an artwork in jquery-sprite-plugin project:
+	http://mattrobenolt.github.com/jquery-sprite-plugin/
