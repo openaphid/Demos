@@ -569,14 +569,12 @@ ConvertToNode = function() {
 	this.node_.touchEnabled = true;
 	this.node_.contentSize = s;
 	this.node_.ontouchend = function(e) {
-		if (e.touches.length > 0) {
-			var touch = e.touches[0];
-			console.log("touch: " + [touch.clientX, touch.clientY].join(", "));
-			console.log("in node: " + e.target.locationOfTouch(touch));
-			for (var i = 0; i < 3; i++) {
-				console.log("in sub node " + i + ", " + e.target.getChildByTag(i + 1000).locationOfTouch(touch));
-				console.log("in sub node " + i + ", " + e.target.getChildByTag(i + 1000).locationAROfTouch(touch));
-			}
+		var touch = e.changedTouches[0];
+		console.log("touch: " + [touch.clientX, touch.clientY].join(", "));
+		console.log("in node: " + e.target.locationOfTouch(touch));
+		for (var i = 0; i < 3; i++) {
+			console.log("in sub node " + i + ", " + e.target.getChildByTag(i + 1000).locationOfTouch(touch));
+			console.log("in sub node " + i + ", " + e.target.getChildByTag(i + 1000).locationAROfTouch(touch));
 		}
 	}
 };

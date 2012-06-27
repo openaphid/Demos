@@ -3,9 +3,27 @@ Demos
 
 Demos and Tests of OpenAphid
 
-## Usage
+## Usage for iOS
 
 Please open the projects with Xcode, build and run any target of them on the iOS simulator or devices. There is no need to start the tiny web server as the "Develop Mode" is turned off for each target.
+
+## Usage for Android
+
+Please import the project into your eclipse.
+
+## System Requirement for iOS
+
+- iOS OS 4.0+
+
+- iPhone 3GS and later
+
+- iPod Touch 3rd generation and later
+
+## System Requirement for Android
+
+- Android OS 2.2+
+
+- ARMv7 processor only, will support ARMv5 in future
 
 ## Copyright and License
 
