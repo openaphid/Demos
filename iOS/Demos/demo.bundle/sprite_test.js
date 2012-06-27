@@ -84,7 +84,7 @@ Sprite1 = function() {
 	this.node_.ontouchend = demo.bind(
 		this, 
 		function(e) {
-			this.addWalker(this.node_.locationOfTouch(e.touches[0]));
+			this.addWalker(this.node_.locationOfTouch(e.changedTouches[0]));
 		}
 	);
 
@@ -135,7 +135,7 @@ SpriteBatchNode1 = function() {
 	this.node_.ontouchend = demo.bind(
 		this, 
 		function(e) {
-			this.addWalker(this.node_.locationOfTouch(e.touches[0]));
+			this.addWalker(this.node_.locationOfTouch(e.changedTouches[0]));
 		}
 	);
 
