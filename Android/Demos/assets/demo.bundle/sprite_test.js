@@ -30,7 +30,6 @@ function setupTests() {
 	demo.initialize();
 
 	demo.allTests = [
-		SpriteFrameTest,
 		Sprite1,
 		SpriteBatchNode1,
 		SpriteColorOpacity,
