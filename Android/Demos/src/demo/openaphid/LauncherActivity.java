@@ -46,6 +46,10 @@ public class LauncherActivity extends ListActivity {
 				ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 		addItem(data, "Advanced Effect Test", "adv_effect_test.js",
 				ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+		addItem(data, "Touch Test", "touch_test.js",
+				ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+		addItem(data, "Java to JavaScript Binding Test", "binding_test.js",
+				ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
 		return data;
 	}
