@@ -29,7 +29,8 @@ function setupTests() {
 	demo.allTests = [
 		BindingTest1,
 		BindingTest2,
-		BindingTest3
+		BindingTest3,
+		BindingTest4
 	];
 
 	director.displayFPS = true;
@@ -88,20 +89,47 @@ BindingTest3 = function() {
 	this.node_ = new Node();
 	var winSize = aphid.g2d.director.winSize;
 	
-	var text = "Binding object:" + aphid.extios.test3 + "\n";
+	var test3 = aphid.extandroid.test3;
+	
+	var text = "Binding object:" + test3 + "\n";
 	var label = new aphid.g2d.LabelTTF(text);
 	label.position = new Point(winSize.width / 2, winSize.height / 2);
 	this.node_.addChild(label);
 
-	console.assert(aphid.extios.test3.add(1, 2) == 3, 'add(1, 2) should be 3');
+	console.assert(test3.add(1, 2) == 3, 'add(1, 2) should be 3');
 	try {
-		aphid.extios.test3.add(1);
+		test3.add(1);
 		console.error("Should not reach here");
 	} catch(err) {
-		console.log("Caught expected exception for test3.add(): " + err);
+		console.log("Exception for test3.add(): " + err);
 	}
 };
 
 BindingTest3.prototype.getNode = function() {return this.node_;};
 BindingTest3.title = "Binding Test 3";
 BindingTest3.subtitle = "Test multiple arguments";
+//----------------------------------------------------------------------------------------------------------------------
+//class BindingTest4
+BindingTest4 = function() {
+	this.node_ = new Node();
+	var winSize = aphid.g2d.director.winSize;
+	
+	var test4 = aphid.ext.test4;
+	
+	var text = "Binding object:" + test4 + "\n";
+	var label = new aphid.g2d.LabelTTF(text);
+	label.position = new Point(winSize.width / 2, winSize.height / 2);
+	this.node_.addChild(label);
+	
+	console.assert(test4.addInMainThread(1, 2) == 3, 'add(1, 2) should be 3, got ' + test4.addInMainThread(1, 2));
+	try {
+		test4.addInMainThread(1);
+		console.error("Should not reach here");
+	} catch(err) {
+		console.log("Exception for test4.add(): " + err);
+	}
+};
+
+BindingTest4.prototype.getNode = function() {return this.node_;};
+BindingTest4.title = "Binding Test 4";
+BindingTest4.subtitle = "Test Invocation in UI Thread";

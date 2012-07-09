@@ -19,6 +19,7 @@ package org.openaphid.gl;
 import org.openaphid.internal.AppDelegate;
 import org.openaphid.internal.utils.AphidLog;
 import org.openaphid.internal.utils.Net;
+import org.openaphid.test.*;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
@@ -54,6 +55,11 @@ public class AphidActivity extends Activity {
 
 		glSurfaceView.requestFocus();
 		glSurfaceView.setFocusableInTouchMode(true);
+		
+		glSurfaceView.getAphidRenderer().setScriptBinding("test1", new BindingTest1(), false);
+		glSurfaceView.getAphidRenderer().setScriptBinding("test2", new BindingTest2(), false);
+		glSurfaceView.getAphidRenderer().setScriptBinding("test3", new BindingTest3(), true);
+		glSurfaceView.getAphidRenderer().setScriptBinding("test4", new BindingTest4(), false);
 
 		glSurfaceView.getAphidRenderer().evaluateScriptFile(scriptFilename);
 	}

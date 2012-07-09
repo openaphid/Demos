@@ -137,7 +137,7 @@ PinchTest = function() {
 	aphid.g2d.director.multipleTouchEnabled = true;
 
 	var sp = new Sprite();
-	sp.contentSize = new Size(100, 100);
+	sp.contentSize = new Size(200, 200);
 	sp.position = new Point(winSize.width / 2, winSize.height / 2);
 	sp.touchEnabled = true;
 	sp.color = "red";
