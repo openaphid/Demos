@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D61270AE169EFCE10052CF96 /* DEMOObjCBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = D61270AD169EFCE10052CF96 /* DEMOObjCBindings.m */; };
+		D624C9CE169EC44400DF79DA /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D624C9C8169EC44400DF79DA /* Icon-72.png */; };
+		D624C9CF169EC44400DF79DA /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D624C9C9169EC44400DF79DA /* Icon-Small-50.png */; };
+		D624C9D0169EC44400DF79DA /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = D624C9CA169EC44400DF79DA /* Icon-Small.png */; };
+		D624C9D1169EC44400DF79DA /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D624C9CB169EC44400DF79DA /* Icon-Small@2x.png */; };
+		D624C9D2169EC44400DF79DA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D624C9CC169EC44400DF79DA /* Icon.png */; };
+		D624C9D3169EC44400DF79DA /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D624C9CD169EC44400DF79DA /* Icon@2x.png */; };
+		D625C2A3169D9B8900A59131 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D625C2A2169D9B8900A59131 /* UIKit.framework */; };
+		D625C2A5169D9B8900A59131 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D625C2A4169D9B8900A59131 /* Foundation.framework */; };
+		D625C2A7169D9B8900A59131 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D625C2A6169D9B8900A59131 /* CoreGraphics.framework */; };
+		D625C2AD169D9B8900A59131 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D625C2AB169D9B8900A59131 /* InfoPlist.strings */; };
+		D625C2AF169D9B8900A59131 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D625C2AE169D9B8900A59131 /* main.m */; };
+		D625C2B3169D9B8900A59131 /* DEMOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D625C2B2169D9B8900A59131 /* DEMOAppDelegate.m */; };
+		D625C2B5169D9B8900A59131 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D625C2B4169D9B8900A59131 /* Default.png */; };
+		D625C2B7169D9B8900A59131 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D625C2B6169D9B8900A59131 /* Default@2x.png */; };
+		D625C2B9169D9B8900A59131 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D625C2B8169D9B8900A59131 /* Default-568h@2x.png */; };
+		D625C2BC169D9B8900A59131 /* DEMOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D625C2BB169D9B8900A59131 /* DEMOViewController.m */; };
+		D625C2BF169D9B8900A59131 /* DEMOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D625C2BD169D9B8900A59131 /* DEMOViewController.xib */; };
+		D625C2CD169D9C1900A59131 /* libAJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D625C2C6169D9C1900A59131 /* libAJ.a */; };
+		D625C2CE169D9C1900A59131 /* libOpenAphid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D625C2C7169D9C1900A59131 /* libOpenAphid.a */; };
+		D625C2CF169D9C1900A59131 /* Runtime.release.md in Resources */ = {isa = PBXBuildFile; fileRef = D625C2CC169D9C1900A59131 /* Runtime.release.md */; };
+		D625C2D6169D9D2800A59131 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D625C2D5169D9D2800A59131 /* libstdc++.dylib */; };
+		D625C2D8169D9D3300A59131 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D625C2D7169D9D3300A59131 /* libicucore.dylib */; };
+		D625C2DA169D9D3900A59131 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D625C2D9169D9D3900A59131 /* OpenGLES.framework */; };
+		D625C2DC169D9D4500A59131 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D625C2DB169D9D4500A59131 /* QuartzCore.framework */; };
+		D625C2E7169DAEE100A59131 /* demo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D625C2E6169DAEE100A59131 /* demo.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D61270AC169EFCE10052CF96 /* DEMOObjCBindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOObjCBindings.h; sourceTree = "<group>"; };
+		D61270AD169EFCE10052CF96 /* DEMOObjCBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOObjCBindings.m; sourceTree = "<group>"; };
+		D624C9C8169EC44400DF79DA /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = SOURCE_ROOT; };
+		D624C9C9169EC44400DF79DA /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = SOURCE_ROOT; };
+		D624C9CA169EC44400DF79DA /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = SOURCE_ROOT; };
+		D624C9CB169EC44400DF79DA /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = SOURCE_ROOT; };
+		D624C9CC169EC44400DF79DA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = SOURCE_ROOT; };
+		D624C9CD169EC44400DF79DA /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = SOURCE_ROOT; };
+		D625C29E169D9B8900A59131 /* Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D625C2A2169D9B8900A59131 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D625C2A4169D9B8900A59131 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D625C2A6169D9B8900A59131 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D625C2AA169D9B8900A59131 /* OpenAphid-Demos-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenAphid-Demos-Info.plist"; sourceTree = "<group>"; };
+		D625C2AC169D9B8900A59131 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D625C2AE169D9B8900A59131 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D625C2B0169D9B8900A59131 /* OpenAphid-Demos-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenAphid-Demos-Prefix.pch"; sourceTree = "<group>"; };
+		D625C2B1169D9B8900A59131 /* DEMOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEMOAppDelegate.h; sourceTree = "<group>"; };
+		D625C2B2169D9B8900A59131 /* DEMOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEMOAppDelegate.m; sourceTree = "<group>"; };
+		D625C2B4169D9B8900A59131 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D625C2B6169D9B8900A59131 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D625C2B8169D9B8900A59131 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D625C2BA169D9B8900A59131 /* DEMOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEMOViewController.h; sourceTree = "<group>"; };
+		D625C2BB169D9B8900A59131 /* DEMOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEMOViewController.m; sourceTree = "<group>"; };
+		D625C2BE169D9B8900A59131 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DEMOViewController.xib; sourceTree = "<group>"; };
+		D625C2C6169D9C1900A59131 /* libAJ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAJ.a; sourceTree = "<group>"; };
+		D625C2C7169D9C1900A59131 /* libOpenAphid.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOpenAphid.a; sourceTree = "<group>"; };
+		D625C2C8169D9C1900A59131 /* OABindingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OABindingProtocol.h; sourceTree = "<group>"; };
+		D625C2C9169D9C1900A59131 /* OAConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAConstants.h; sourceTree = "<group>"; };
+		D625C2CA169D9C1900A59131 /* OAGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAGLViewController.h; sourceTree = "<group>"; };
+		D625C2CB169D9C1900A59131 /* OARootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARootViewController.h; sourceTree = "<group>"; };
+		D625C2CC169D9C1900A59131 /* Runtime.release.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Runtime.release.md; sourceTree = "<group>"; };
+		D625C2D5169D9D2800A59131 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		D625C2D7169D9D3300A59131 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		D625C2D9169D9D3900A59131 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D625C2DB169D9D4500A59131 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D625C2E6169DAEE100A59131 /* demo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = demo.bundle; path = "OpenAphid-Demos/demo.bundle"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D625C29B169D9B8900A59131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D625C2D8169D9D3300A59131 /* libicucore.dylib in Frameworks */,
+				D625C2D6169D9D2800A59131 /* libstdc++.dylib in Frameworks */,
+				D625C2A3169D9B8900A59131 /* UIKit.framework in Frameworks */,
+				D625C2A5169D9B8900A59131 /* Foundation.framework in Frameworks */,
+				D625C2A7169D9B8900A59131 /* CoreGraphics.framework in Frameworks */,
+				D625C2DA169D9D3900A59131 /* OpenGLES.framework in Frameworks */,
+				D625C2DC169D9D4500A59131 /* QuartzCore.framework in Frameworks */,
+				D625C2CD169D9C1900A59131 /* libAJ.a in Frameworks */,
+				D625C2CE169D9C1900A59131 /* libOpenAphid.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D625C293169D9B8900A59131 = {
+			isa = PBXGroup;
+			children = (
+				D625C2E6169DAEE100A59131 /* demo.bundle */,
+				D625C2C5169D9C1900A59131 /* OpenAphid-Runtime */,
+				D625C2A8169D9B8900A59131 /* OpenAphid-Demos */,
+				D625C2A1169D9B8900A59131 /* Frameworks */,
+				D625C29F169D9B8900A59131 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D625C29F169D9B8900A59131 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D625C29E169D9B8900A59131 /* Demos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D625C2A1169D9B8900A59131 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D625C2D7169D9D3300A59131 /* libicucore.dylib */,
+				D625C2D5169D9D2800A59131 /* libstdc++.dylib */,
+				D625C2DB169D9D4500A59131 /* QuartzCore.framework */,
+				D625C2D9169D9D3900A59131 /* OpenGLES.framework */,
+				D625C2A2169D9B8900A59131 /* UIKit.framework */,
+				D625C2A4169D9B8900A59131 /* Foundation.framework */,
+				D625C2A6169D9B8900A59131 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D625C2A8169D9B8900A59131 /* OpenAphid-Demos */ = {
+			isa = PBXGroup;
+			children = (
+				D61270AC169EFCE10052CF96 /* DEMOObjCBindings.h */,
+				D61270AD169EFCE10052CF96 /* DEMOObjCBindings.m */,
+				D625C2B1169D9B8900A59131 /* DEMOAppDelegate.h */,
+				D625C2B2169D9B8900A59131 /* DEMOAppDelegate.m */,
+				D625C2BA169D9B8900A59131 /* DEMOViewController.h */,
+				D625C2BB169D9B8900A59131 /* DEMOViewController.m */,
+				D625C2BD169D9B8900A59131 /* DEMOViewController.xib */,
+				D625C2A9169D9B8900A59131 /* Supporting Files */,
+			);
+			path = "OpenAphid-Demos";
+			sourceTree = "<group>";
+		};
+		D625C2A9169D9B8900A59131 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D625C2AA169D9B8900A59131 /* OpenAphid-Demos-Info.plist */,
+				D625C2AB169D9B8900A59131 /* InfoPlist.strings */,
+				D625C2AE169D9B8900A59131 /* main.m */,
+				D625C2B0169D9B8900A59131 /* OpenAphid-Demos-Prefix.pch */,
+				D625C2B4169D9B8900A59131 /* Default.png */,
+				D625C2B6169D9B8900A59131 /* Default@2x.png */,
+				D625C2B8169D9B8900A59131 /* Default-568h@2x.png */,
+				D624C9C8169EC44400DF79DA /* Icon-72.png */,
+				D624C9C9169EC44400DF79DA /* Icon-Small-50.png */,
+				D624C9CA169EC44400DF79DA /* Icon-Small.png */,
+				D624C9CB169EC44400DF79DA /* Icon-Small@2x.png */,
+				D624C9CC169EC44400DF79DA /* Icon.png */,
+				D624C9CD169EC44400DF79DA /* Icon@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D625C2C5169D9C1900A59131 /* OpenAphid-Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				D625C2C6169D9C1900A59131 /* libAJ.a */,
+				D625C2C7169D9C1900A59131 /* libOpenAphid.a */,
+				D625C2C8169D9C1900A59131 /* OABindingProtocol.h */,
+				D625C2C9169D9C1900A59131 /* OAConstants.h */,
+				D625C2CA169D9C1900A59131 /* OAGLViewController.h */,
+				D625C2CB169D9C1900A59131 /* OARootViewController.h */,
+				D625C2CC169D9C1900A59131 /* Runtime.release.md */,
+			);
+			path = "OpenAphid-Runtime";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D625C29D169D9B8900A59131 /* OpenAphid-Demos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D625C2C2169D9B8900A59131 /* Build configuration list for PBXNativeTarget "OpenAphid-Demos" */;
+			buildPhases = (
+				D625C29A169D9B8900A59131 /* Sources */,
+				D625C29B169D9B8900A59131 /* Frameworks */,
+				D625C29C169D9B8900A59131 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenAphid-Demos";
+			productName = "OpenAphid-Demos";
+			productReference = D625C29E169D9B8900A59131 /* Demos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D625C295169D9B8900A59131 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DEMO;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = AphidMobile;
+			};
+			buildConfigurationList = D625C298169D9B8900A59131 /* Build configuration list for PBXProject "OpenAphid-Demos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D625C293169D9B8900A59131;
+			productRefGroup = D625C29F169D9B8900A59131 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D625C29D169D9B8900A59131 /* OpenAphid-Demos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D625C29C169D9B8900A59131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D625C2AD169D9B8900A59131 /* InfoPlist.strings in Resources */,
+				D625C2B5169D9B8900A59131 /* Default.png in Resources */,
+				D625C2B7169D9B8900A59131 /* Default@2x.png in Resources */,
+				D625C2B9169D9B8900A59131 /* Default-568h@2x.png in Resources */,
+				D625C2BF169D9B8900A59131 /* DEMOViewController.xib in Resources */,
+				D625C2CF169D9C1900A59131 /* Runtime.release.md in Resources */,
+				D625C2E7169DAEE100A59131 /* demo.bundle in Resources */,
+				D624C9CE169EC44400DF79DA /* Icon-72.png in Resources */,
+				D624C9CF169EC44400DF79DA /* Icon-Small-50.png in Resources */,
+				D624C9D0169EC44400DF79DA /* Icon-Small.png in Resources */,
+				D624C9D1169EC44400DF79DA /* Icon-Small@2x.png in Resources */,
+				D624C9D2169EC44400DF79DA /* Icon.png in Resources */,
+				D624C9D3169EC44400DF79DA /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D625C29A169D9B8900A59131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D625C2AF169D9B8900A59131 /* main.m in Sources */,
+				D625C2B3169D9B8900A59131 /* DEMOAppDelegate.m in Sources */,
+				D625C2BC169D9B8900A59131 /* DEMOViewController.m in Sources */,
+				D61270AE169EFCE10052CF96 /* DEMOObjCBindings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D625C2AB169D9B8900A59131 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D625C2AC169D9B8900A59131 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D625C2BD169D9B8900A59131 /* DEMOViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D625C2BE169D9B8900A59131 /* en */,
+			);
+			name = DEMOViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D625C2C0169D9B8900A59131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D625C2C1169D9B8900A59131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D625C2C3169D9B8900A59131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenAphid-Demos/OpenAphid-Demos-Prefix.pch";
+				INFOPLIST_FILE = "OpenAphid-Demos/OpenAphid-Demos-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/OpenAphid-Runtime\"",
+				);
+				PRODUCT_NAME = Demos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D625C2C4169D9B8900A59131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenAphid-Demos/OpenAphid-Demos-Prefix.pch";
+				INFOPLIST_FILE = "OpenAphid-Demos/OpenAphid-Demos-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/OpenAphid-Runtime\"",
+				);
+				PRODUCT_NAME = Demos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D625C298169D9B8900A59131 /* Build configuration list for PBXProject "OpenAphid-Demos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D625C2C0169D9B8900A59131 /* Debug */,
+				D625C2C1169D9B8900A59131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D625C2C2169D9B8900A59131 /* Build configuration list for PBXNativeTarget "OpenAphid-Demos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D625C2C3169D9B8900A59131 /* Debug */,
+				D625C2C4169D9B8900A59131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D625C295169D9B8900A59131 /* Project object */;
+}
