@@ -1,6 +1,6 @@
-aphid-1.png, aphid-2.png, background-480.png are designed by [Onna Dobre](http://wannadobre.carbonmade.com/) and are released under the following license:
+aphid-1.png, aphid-2.png, background-480.png are designed by [Oana Dobre](http://wannadobre.carbonmade.com/) and are released under the following license:
 
-	Copyright 2012 Aphid Mobile
+	Copyright 2012 Oana Dobre & Aphid Mobile
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
