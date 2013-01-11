@@ -10,12 +10,12 @@ tank.maxTankCount = 1000;
 tank.Tank = function(texture) {
 	//fields
 	this.sprite_ = new aphid.g2d.Sprite(texture);
-	//the movement velocity and direction
+	//movement velocity and direction
 	this.vx_ = Math.random() > 0.5 ? 0.1 : -0.1;
 	this.vy_ = Math.random() > 0.5 ? 0.1 : -0.1;
 
 	var winSize = aphid.g2d.director.winSize;
-	//a random initial position
+	//random initial position
 	this.sprite_.position = new aphid.core.Point(Math.random() * winSize.width, Math.random() * winSize.height);
 	//setup and register frame update listener
 	this.sprite_.onframeupdate = bind(this, this.handleFrameUpdate);
@@ -32,9 +32,7 @@ tank.Tank.prototype.handleFrameUpdate = function(target, interval) {
 		if (p.x < 0) {
 			p.x = 0;
 			this.vx_ = -this.vx_;
-		}
-		
-		if (p.x > size.width) {
+		} else if (p.x > size.width) {
 			p.x = size.width;
 			this.vx_ = -this.vx_;
 		}
@@ -42,9 +40,7 @@ tank.Tank.prototype.handleFrameUpdate = function(target, interval) {
 		if (p.y < 0) {
 			p.y = 0;
 			this.vy_ = -this.vy_;
-		}
-		
-		if (p.y > size.height) {
+		} else if (p.y > size.height) {
 			p.y = size.height;
 			this.vy_ = -this.vy_;
 		}
@@ -55,7 +51,7 @@ tank.FPS = function() {
 	this.label_ = new aphid.g2d.LabelTTF("??.??");
 	this.label_.position = new aphid.core.Point(100, 100);
 	this.fpsCount_ = 0;
-	this.deltaTime_ = 0;
+	this.lastTime_ = Date.now();
 
 	this.label_.onframeupdate = bind(this, this.handleFrameUpdate);
 	this.label_.scheduleUpdate();
@@ -63,13 +59,13 @@ tank.FPS = function() {
 
 tank.FPS.prototype.getLabel = function() {return this.label_;};
 
-tank.FPS.prototype.handleFrameUpdate = function(target, interval) {
+tank.FPS.prototype.handleFrameUpdate = function(target, frameInterval) {
 		this.fpsCount_++;
-		this.deltaTime_ += interval;
-		if (this.deltaTime_ >= 5) {
-			this.label_.text = "" + (this.fpsCount_ / this.deltaTime_).toFixed(2);
+		interval = Date.now() - this.lastTime_;
+		if (interval >= 5000) {
+			this.label_.text = "" + (this.fpsCount_ / interval * 1000).toFixed(2);
 			this.fpsCount_ = 0;
-			this.deltaTime_ = 0;
+			this.lastTime_ = Date.now();
 		}
 	};
 

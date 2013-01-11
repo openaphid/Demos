@@ -159,6 +159,12 @@
 																								jsFilename:@"batch_tank.js"
 																		 supportedOrientations:OAOrientationMaskPortrait
 															 ]];
+			
+			[section.rows addObject:[[JSRow alloc] initWithTitle:@"coffee_tank.js"
+																									subtitle:@"Same app written in CoffeeScript"
+																								jsFilename:@"coffee_tank.js"
+																		 supportedOrientations:OAOrientationMaskPortrait
+															 ]];
 		}
 		
 		{
@@ -281,7 +287,7 @@
 		OAGLViewController* controller = [[OAGLViewController alloc] init];
 		[controller configBundleName:@"demo.bundle"
 												 baseURL:[NSURL URLWithString:@"http://129.158.217.36:18080"]
-										 developMode:NO
+										 developMode:YES
 		 ];
 		controller.supportedOrientations = jsRow.supportedOrientations;
 		[controller configGLViewPixelFormat:jsRow.glPixelFormat];
