@@ -20,8 +20,6 @@
 
 @implementation Section
 
-@synthesize title = _title, rows = _rows;
-
 -(id)initWithTitle:(NSString *)title
 {
 	self = [super init];
@@ -42,7 +40,7 @@
 @end
 
 @implementation Row
-@synthesize title = _title, subtitle = _subtitle;
+
 -(id)initWithTitle:(NSString *)title subtitle:(NSString *)subtitle
 {
 	self = [super init];
@@ -63,7 +61,6 @@
 @end
 
 @implementation JSRow
-@synthesize jsFilename = _jsFilename, supportedOrientations = _supportedOrientations;
 
 -(id)initWithTitle:(NSString *)title subtitle:(NSString *)subtitle jsFilename:(NSString *)jsFilename supportedOrientations:(int)supportedOrientations{
 	return [self initWithTitle:title subtitle:subtitle jsFilename:jsFilename supportedOrientations:supportedOrientations glPixelFormat:OAGLViewPixelFormatRGB565];
@@ -83,14 +80,30 @@
 
 @end
 
+@interface AltScriptRow : JSRow
+@property(nonatomic, strong) NSString* originalScriptFilename;
+-(id)initWithTitle:(NSString *)title subtitle:(NSString *)subtitle jsFilename:(NSString *)jsFilename supportedOrientations:(int)supportedOrientations originalScriptFilename:(NSString*)originalScriptFilename;
+@end
+
+@implementation AltScriptRow
+
+-(id)initWithTitle:(NSString *)title subtitle:(NSString *)subtitle jsFilename:(NSString *)jsFilename supportedOrientations:(int)supportedOrientations originalScriptFilename:(NSString *)originalScriptFilename
+{
+	self = [super initWithTitle:title subtitle:subtitle jsFilename:jsFilename supportedOrientations:supportedOrientations];
+	if (self) {
+		self.originalScriptFilename = originalScriptFilename;
+	}
+	
+	return self;
+}
+@end
+
 @interface URLRow : Row
 @property(nonatomic, strong) NSString* urlString;
 -(id)initWithTitle:(NSString *)title subtitle:(NSString *)subtitle urlString:(NSString*)urlString;
 @end
 
 @implementation URLRow
-
-@synthesize urlString = _urlString;
 
 -(id)initWithTitle:(NSString *)title subtitle:(NSString *)subtitle urlString:(NSString *)urlString
 {
@@ -112,8 +125,6 @@
 @end
 
 @implementation DEMOViewController
-
-@synthesize selectedRow = _selectedRow;
 
 - (void)viewDidLoad
 {
@@ -160,10 +171,18 @@
 																		 supportedOrientations:OAOrientationMaskPortrait
 															 ]];
 			
-			[section.rows addObject:[[JSRow alloc] initWithTitle:@"coffee_tank.js"
-																									subtitle:@"Same app written in CoffeeScript"
-																								jsFilename:@"coffee_tank.js"
-																		 supportedOrientations:OAOrientationMaskPortrait
+			[section.rows addObject:[[AltScriptRow alloc] initWithTitle:@"coffee_tank.js"
+																												 subtitle:@"tank.js written in CoffeeScript"
+																											 jsFilename:@"coffee_tank.js"
+																						supportedOrientations:OAOrientationMaskPortrait
+																					 originalScriptFilename:@"coffee_tank.coffee"
+															 ]];
+			
+			[section.rows addObject:[[AltScriptRow alloc] initWithTitle:@"type_tank.js"
+																												 subtitle:@"tank.js written in TypeScript"
+																											 jsFilename:@"type_tank.js"
+																						supportedOrientations:OAOrientationMaskPortrait
+																					 originalScriptFilename:@"type_tank.ts"
 															 ]];
 		}
 		
@@ -306,7 +325,13 @@
 											 [controller evaluateScript:jsRow.jsFilename];
 										 }];
 	} else if (buttonIndex == 1) { //View Code
-		NSString* urlString = [NSString stringWithFormat:@"https://github.com/openaphid/Demos/blob/master/iOS/OpenAphid-Demos/OpenAphid-Demos/demo.bundle/%@", jsRow.jsFilename];
+		static NSString* kSourceCodeURLFormat = @"https://github.com/openaphid/Demos/blob/master/iOS/OpenAphid-Demos/OpenAphid-Demos/demo.bundle/%@";
+		NSString* urlString = nil;
+		if ([jsRow isKindOfClass:[AltScriptRow class]])
+			urlString = [NSString stringWithFormat:kSourceCodeURLFormat, ((AltScriptRow*)jsRow).originalScriptFilename]; //show the original script file instead of the generated JavaScript file
+		else
+			urlString = [NSString stringWithFormat:kSourceCodeURLFormat, jsRow.jsFilename];
+		
 		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
 	}
 }
