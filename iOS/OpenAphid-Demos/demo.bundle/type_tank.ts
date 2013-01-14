@@ -1,6 +1,8 @@
+/// <reference no-default-lib="true"/>
+
 declare var aphid : any;
 
-module moduletank {
+module moduletank { //declare a module
 	var maxTankCount = 1000;
 
 	class Tank {
@@ -10,11 +12,14 @@ module moduletank {
 
 		constructor(texture : any) {
 			this.sprite = new aphid.g2d.Sprite(texture);
+			//movement velocity and direction
 			this.vx = Math.random() > 0.5 ? 0.1 : -0.1;
 			this.vy = Math.random() > 0.5 ? 0.1 : -0.1;
 
 			var winSize = aphid.g2d.director.winSize;
+			//random initial position
 			this.sprite.position = new aphid.core.Point(Math.random() * winSize.width, Math.random() * winSize.height);
+			//setup and register frame update listener
 			this.sprite.scheduleUpdate();
 			this.sprite.onframeupdate = (target, interval : number) => {
 				var p = this.sprite.position;
@@ -39,7 +44,7 @@ module moduletank {
 				this.sprite.position = p;
 			}
 		}
-	}
+	} //end of class Tank
 
 	class FPS {
 		public label = new aphid.g2d.LabelTTF("??.??");
@@ -59,7 +64,7 @@ module moduletank {
 				}
 			}
 		}
-	}
+	} //end of class FPS
 
 	export function initialize() {
 		var director = aphid.g2d.director;
@@ -84,9 +89,9 @@ module moduletank {
 			);
 
 		for (var i = 0; i < maxTankCount; i++) {
-			var newTank = new Tank(frames[0].texture);
-			newTank.sprite.runAction(action.copy());
-			scene.addChild(newTank.sprite);
+			var tank = new Tank(frames[0].texture);
+			tank.sprite.runAction(action.copy());
+			scene.addChild(tank.sprite);
 		}
 
 		var fps = new FPS();

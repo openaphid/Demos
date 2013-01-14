@@ -73,9 +73,9 @@ var moduletank;
         var animation = new aphid.g2d.Animation(frames, 0.05);
         var action = aphid.g2d.actions.repeatForever(aphid.g2d.actions.animate(animation, false));
         for(var i = 0; i < maxTankCount; i++) {
-            var newTank = new Tank(frames[0].texture);
-            newTank.sprite.runAction(action.copy());
-            scene.addChild(newTank.sprite);
+            var tank = new Tank(frames[0].texture);
+            tank.sprite.runAction(action.copy());
+            scene.addChild(tank.sprite);
         }
         var fps = new FPS();
         scene.addChild(fps.label);

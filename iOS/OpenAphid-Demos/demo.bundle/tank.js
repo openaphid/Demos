@@ -4,10 +4,10 @@ bind = function (scope, fn) {
 	};
 }
 
-var tank = {} //declare a namespace
-tank.maxTankCount = 1000;
+var moduletank = {} //declare a namespace
+moduletank.maxTankCount = 1000;
 
-tank.Tank = function(texture) {
+moduletank.Tank = function(texture) {
 	//fields
 	this.sprite_ = new aphid.g2d.Sprite(texture);
 	//movement velocity and direction
@@ -22,9 +22,9 @@ tank.Tank = function(texture) {
 	this.sprite_.scheduleUpdate();
 };
 
-tank.Tank.prototype.getSprite = function() {return this.sprite_;};
+moduletank.Tank.prototype.getSprite = function() {return this.sprite_;};
 
-tank.Tank.prototype.handleFrameUpdate = function(target, interval) {
+moduletank.Tank.prototype.handleFrameUpdate = function(target, interval) {
 		var p = this.sprite_.position;
 		p.x += interval * 1000 * this.vx_;
 		p.y += interval * 1000 * this.vy_;
@@ -47,7 +47,7 @@ tank.Tank.prototype.handleFrameUpdate = function(target, interval) {
 		this.sprite_.position = p;
 };
 
-tank.FPS = function() {
+moduletank.FPS = function() {
 	this.label_ = new aphid.g2d.LabelTTF("??.??");
 	this.label_.position = new aphid.core.Point(100, 100);
 	this.fpsCount_ = 0;
@@ -57,9 +57,9 @@ tank.FPS = function() {
 	this.label_.scheduleUpdate();
 };
 
-tank.FPS.prototype.getLabel = function() {return this.label_;};
+moduletank.FPS.prototype.getLabel = function() {return this.label_;};
 
-tank.FPS.prototype.handleFrameUpdate = function(target, frameInterval) {
+moduletank.FPS.prototype.handleFrameUpdate = function(target, frameInterval) {
 		this.fpsCount_++;
 		interval = Date.now() - this.lastTime_;
 		if (interval >= 5000) {
@@ -69,7 +69,7 @@ tank.FPS.prototype.handleFrameUpdate = function(target, frameInterval) {
 		}
 	};
 
-tank.initialize = function() {
+moduletank.initialize = function() {
 	var director = aphid.g2d.director;
 
 	var scene = new aphid.g2d.Scene();
@@ -91,16 +91,16 @@ tank.initialize = function() {
 		aphid.g2d.actions.animate(animation, false)
 		);
 
-	for (var i = 0; i < tank.maxTankCount; i++) {
-		var newTank = new tank.Tank(frames[0].texture);
+	for (var i = 0; i < moduletank.maxTankCount; i++) {
+		var newTank = new moduletank.Tank(frames[0].texture);
 		newTank.getSprite().runAction(action.copy());
 		scene.addChild(newTank.getSprite());
 	}
 
-	var fps = new tank.FPS();
+	var fps = new moduletank.FPS();
 	scene.addChild(fps.getLabel());
 
 	director.runScene(scene);
 };
 
-aphid.js.onload = tank.initialize;
+aphid.js.onload = moduletank.initialize;
