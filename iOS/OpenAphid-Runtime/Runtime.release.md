@@ -1,3 +1,11 @@
+## 0.2.1f (2013-01-14)
+
+- Fixes incorrect orientation issue on iOS6.
+
+- Fixes compilation errors under llvm_4.1.
+
+- New all-in-one demo app with ARC enabled.
+
 ## 0.2 (2012-05-15)
 
 - New binding system for exposing Objective-C methods to JavaScript

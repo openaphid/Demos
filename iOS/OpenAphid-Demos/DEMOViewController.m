@@ -306,7 +306,7 @@
 		OAGLViewController* controller = [[OAGLViewController alloc] init];
 		[controller configBundleName:@"demo.bundle"
 												 baseURL:[NSURL URLWithString:@"http://129.158.217.36:18080"]
-										 developMode:YES
+										 developMode:NO
 		 ];
 		controller.supportedOrientations = jsRow.supportedOrientations;
 		[controller configGLViewPixelFormat:jsRow.glPixelFormat];
@@ -325,7 +325,7 @@
 											 [controller evaluateScript:jsRow.jsFilename];
 										 }];
 	} else if (buttonIndex == 1) { //View Code
-		static NSString* kSourceCodeURLFormat = @"https://github.com/openaphid/Demos/blob/master/iOS/OpenAphid-Demos/OpenAphid-Demos/demo.bundle/%@";
+		static NSString* kSourceCodeURLFormat = @"https://github.com/openaphid/Demos/blob/master/iOS/OpenAphid-Demos/demo.bundle/%@";
 		NSString* urlString = nil;
 		if ([jsRow isKindOfClass:[AltScriptRow class]])
 			urlString = [NSString stringWithFormat:kSourceCodeURLFormat, ((AltScriptRow*)jsRow).originalScriptFilename]; //show the original script file instead of the generated JavaScript file
