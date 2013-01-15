@@ -28,11 +28,15 @@ import android.view.Window;
 import android.view.WindowManager;
 
 public class AphidActivity extends Activity {
+	private static final boolean USE_JAVASCRIPT_JIT = false; //set to 'true' to enable JavaScript JIT
 
 	private AphidGLSurfaceView glSurfaceView;
 
 	static {
-		System.loadLibrary("OpenAphid");
+		if (USE_JAVASCRIPT_JIT)
+			System.loadLibrary("OpenAphid_JIT");
+		else
+			System.loadLibrary("OpenAphid");
 	}
 
 	@Override
