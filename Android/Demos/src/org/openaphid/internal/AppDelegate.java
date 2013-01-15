@@ -19,6 +19,7 @@ package org.openaphid.internal;
 import java.net.URL;
 
 import org.openaphid.gl.AphidActivity;
+import org.openaphid.internal.utils.AphidLog;
 import org.openaphid.internal.utils.AphidNativeExposed;
 
 import android.content.Context;
@@ -28,7 +29,7 @@ import android.os.Handler;
 
 @AphidNativeExposed
 public class AppDelegate {
-	public static final String VERSION_STRING = "OpenAphid Android v0.1.5";
+	public static final String VERSION_STRING = "OpenAphid Android v0.2.1f";
 	
 	private static boolean developer_mode = true;
 
@@ -61,7 +62,10 @@ public class AppDelegate {
 	}
 
 	public static void onAphidActivityDestroyed(AphidActivity activity) {
-		aphid_activity = null;
+		if (aphid_activity == activity)
+			aphid_activity = null;
+		else
+			AphidLog.e("destroyed activity [%s] is not the original instance [%s]", activity, aphid_activity);
 	}
 
 	public static void initializeNativeEngine() {

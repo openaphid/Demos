@@ -136,16 +136,16 @@
 		
 		
 		{
-			Section* section = [[Section alloc] initWithTitle:@"About OpenAphid Engine"];
+			Section* section = [[Section alloc] initWithTitle:@"About OpenAphid-Engine"];
 			[_tableSections addObject:section];
 			
 			[section.rows addObject:[[URLRow alloc] initWithTitle:@"Github"
 																									 subtitle:@"Github repositories"
-																									urlString:@"http://github.com/openaphid"
+																									urlString:@"https://github.com/openaphid"
 															 ]];
 			
 			[section.rows addObject:[[URLRow alloc] initWithTitle:@"Blog"
-																									 subtitle:@"Posts about OpenAphid Engine"
+																									 subtitle:@"Posts about OpenAphid-Engine"
 																									urlString:@"http://openaphid.github.com/blog/categories/openaphid-engine/"
 															 ]];
 			
@@ -171,14 +171,14 @@
 																		 supportedOrientations:OAOrientationMaskPortrait
 															 ]];
 			
-			[section.rows addObject:[[AltScriptRow alloc] initWithTitle:@"coffee_tank.js"
+			[section.rows addObject:[[AltScriptRow alloc] initWithTitle:@"coffee_tank.coffee"
 																												 subtitle:@"tank.js written in CoffeeScript"
 																											 jsFilename:@"coffee_tank.js"
 																						supportedOrientations:OAOrientationMaskPortrait
 																					 originalScriptFilename:@"coffee_tank.coffee"
 															 ]];
 			
-			[section.rows addObject:[[AltScriptRow alloc] initWithTitle:@"type_tank.js"
+			[section.rows addObject:[[AltScriptRow alloc] initWithTitle:@"type_tank.ts"
 																												 subtitle:@"tank.js written in TypeScript"
 																											 jsFilename:@"type_tank.js"
 																						supportedOrientations:OAOrientationMaskPortrait
@@ -187,12 +187,24 @@
 		}
 		
 		{
-			Section* section = [[Section alloc] initWithTitle:@"Demos"];
+			Section* section = [[Section alloc] initWithTitle:@"Examples"];
 			[_tableSections addObject:section];
 			
 			[section.rows addObject:[[JSRow alloc] initWithTitle:@"node_test.js"
 																									subtitle:@"Node APIs"
 																								jsFilename:@"node_test.js"
+																		 supportedOrientations:OAOrientationLandscape
+															 ]];
+			
+			[section.rows addObject:[[JSRow alloc] initWithTitle:@"sprite_test.js"
+																									subtitle:@"Sprite APIs"
+																								jsFilename:@"sprite_test.js"
+																		 supportedOrientations:OAOrientationLandscape
+															 ]];
+			
+			[section.rows addObject:[[JSRow alloc] initWithTitle:@"effect_test.js"
+																									subtitle:@"Effects"
+																								jsFilename:@"effect_test.js"
 																		 supportedOrientations:OAOrientationLandscape
 															 ]];
 			
@@ -203,27 +215,15 @@
 																						 glPixelFormat:OAGLViewPixelFormatRGBA8
 															 ]];
 			
-			[section.rows addObject:[[JSRow alloc] initWithTitle:@"binding_test.js"
-																									subtitle:@"Dynamically bind Objective-C classes"
-																								jsFilename:@"binding_test.js"
-																		 supportedOrientations:OAOrientationLandscape
-															 ]];
-			
-			[section.rows addObject:[[JSRow alloc] initWithTitle:@"effect_test.js"
-																									subtitle:@"Effects"
-																								jsFilename:@"effect_test.js"
-																		 supportedOrientations:OAOrientationLandscape
-															 ]];
-			
-			[section.rows addObject:[[JSRow alloc] initWithTitle:@"sprite_test.js"
-																									subtitle:@"Sprite APIs"
-																								jsFilename:@"sprite_test.js"
-																		 supportedOrientations:OAOrientationLandscape
-															 ]];
-			
 			[section.rows addObject:[[JSRow alloc] initWithTitle:@"touch_test.js"
 																									subtitle:@"W3C Touch & Multi-touch APIs"
 																								jsFilename:@"touch_test.js"
+																		 supportedOrientations:OAOrientationLandscape
+															 ]];
+			
+			[section.rows addObject:[[JSRow alloc] initWithTitle:@"binding_test.js"
+																									subtitle:@"Dynamically bind Objective-C classes"
+																								jsFilename:@"binding_test.js"
 																		 supportedOrientations:OAOrientationLandscape
 															 ]];
 		}
@@ -290,7 +290,7 @@
 																														 delegate:self
 																										cancelButtonTitle:@"Cancel"
 																							 destructiveButtonTitle:nil
-																										otherButtonTitles:@"Start Demo", @"View Source", nil
+																										otherButtonTitles:@"Launch Demo", @"View Source", nil
 																	];
 		[actionSheet showInView:self.view];
 	} else if ([row isKindOfClass:[URLRow class]]) {

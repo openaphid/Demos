@@ -1,4 +1,4 @@
-package org.openaphid.test;
+package demo.openaphid.binding;
 
 import java.util.List;
 import java.util.Map;

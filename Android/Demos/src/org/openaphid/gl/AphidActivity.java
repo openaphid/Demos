@@ -19,7 +19,7 @@ package org.openaphid.gl;
 import org.openaphid.internal.AppDelegate;
 import org.openaphid.internal.utils.AphidLog;
 import org.openaphid.internal.utils.Net;
-import org.openaphid.test.*;
+import demo.openaphid.binding.*;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;

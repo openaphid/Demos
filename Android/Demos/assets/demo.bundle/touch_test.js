@@ -136,15 +136,17 @@ PinchTest = function() {
 	var winSize = aphid.g2d.director.winSize;
 	aphid.g2d.director.multipleTouchEnabled = true;
 
-	var sp = new Sprite();
-	sp.contentSize = new Size(200, 200);
-	sp.position = new Point(winSize.width / 2, winSize.height / 2);
-	sp.touchEnabled = true;
-	sp.color = "red";
+	this.node_.contentSize = winSize;
 
-	sp.ontouchstart = demo.bind(this, this.handleTouchStart);
-	sp.ontouchmove = demo.bind(this, this.handleTouchMove);
-	//sp.ontouchend = demo.bind(this, this.handleTouchEnd);
+	var sp = new Sprite();
+	sp.contentSize = new Size(100, 100);
+	sp.position = new Point(winSize.width / 2, winSize.height / 2);
+	sp.color = "red";
+	this.sprite_ = sp;
+
+	this.node_.touchEnabled = true;
+	this.node_.ontouchstart = demo.bind(this, this.handleTouchStart);
+	this.node_.ontouchmove = demo.bind(this, this.handleTouchMove);
 
 	this.node_.addChild(sp);
 };
@@ -155,6 +157,7 @@ PinchTest.prototype.handleTouchStart = function(e) {
 		var p1 = e.target.locationOfTouch(e.targetTouches[0]);
 		var p2 = e.target.locationOfTouch(e.targetTouches[1]);
 		this.distance_ = Math.sqrt((p1.x - p2.x) * (p1.x - p2.x) + (p1.y - p2.y) * (p1.y - p2.y));
+		this.startScaleX_ = this.sprite_.scale.x;
 	}
 };
 
@@ -165,7 +168,9 @@ PinchTest.prototype.handleTouchMove = function(e) {
 		var dis = Math.sqrt((p1.x - p2.x) * (p1.x - p2.x) + (p1.y - p2.y) * (p1.y - p2.y));
 		if (this.distance_ == 0)
 			this.distance_ = dis;
-		e.target.scale = e.target.scale.x * dis / this.distance_;
+		
+		if (dis > 0)
+			this.sprite_.scale = this.startScaleX_ * dis / this.distance_;
 	}
 };
 PinchTest.title = "Pinch Touch";

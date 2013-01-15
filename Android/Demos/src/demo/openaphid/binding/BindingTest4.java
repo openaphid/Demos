@@ -1,4 +1,4 @@
-package org.openaphid.test;
+package demo.openaphid.binding;
 
 import org.openaphid.bind.AphidJSFunction;
 import org.openaphid.internal.utils.UI;
