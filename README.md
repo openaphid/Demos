@@ -1,3 +1,7 @@
+The project has been DISCONTINUED. Please refer to the blog post for more details.
+
+[http://openaphid.github.com/blog/2013/01/14/openaphid-engine-v0-dot-2-1f-and-discontinuation-announcement/](http://openaphid.github.com/blog/2013/01/14/openaphid-engine-v0-dot-2-1f-and-discontinuation-announcement/)
+
 Demos
 =====
 
@@ -5,7 +9,7 @@ Demos and Tests of OpenAphid
 
 ## Usage for iOS
 
-Please open the projects with Xcode, build and run any target of them on the iOS simulator or devices. There is no need to start the tiny web server as the "Develop Mode" is turned off for each target.
+Please open the projects with Xcode, build and run on iOS simulator or devices. 
 
 ## Usage for Android
 
@@ -13,17 +17,19 @@ Please import the project into your eclipse.
 
 ## System Requirement for iOS
 
-- iOS OS 4.0+
+- iOS OS 5.0+
 
 - iPhone 3GS and later
 
 - iPod Touch 3rd generation and later
 
+- iPad
+
 ## System Requirement for Android
 
 - Android OS 2.2+
 
-- ARMv7 processor only, will support ARMv5 in future
+- ARMv7 processor only
 
 ## Copyright and License
 
