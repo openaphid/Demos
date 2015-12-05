@@ -335,6 +335,7 @@
 		D625C2C3169D9B8900A59131 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenAphid-Demos/OpenAphid-Demos-Prefix.pch";
 				INFOPLIST_FILE = "OpenAphid-Demos/OpenAphid-Demos-Info.plist";
@@ -345,6 +346,7 @@
 				);
 				PRODUCT_NAME = Demos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -352,6 +354,7 @@
 		D625C2C4169D9B8900A59131 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenAphid-Demos/OpenAphid-Demos-Prefix.pch";
 				INFOPLIST_FILE = "OpenAphid-Demos/OpenAphid-Demos-Info.plist";
@@ -362,6 +365,7 @@
 				);
 				PRODUCT_NAME = Demos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
